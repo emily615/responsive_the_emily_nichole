@@ -21,6 +21,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 
+  <script src="https://kit.fontawesome.com/44117f4cb0.js" crossorigin="anonymous"></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -32,7 +33,9 @@
     <div class="content-wrapper">
       <div class="half-width">
         <h1>Hey! I'm Emily.</h1>
-        <p>I'm a beginner web developer based in Northern New Jersey. Let's make something <span>awesome.</span></p>
+        <p>I'm a beginner web developer based in Northern New Jersey.
+          <br> Let's make something <span>awesome.</span>
+        </p>
       </div>
       <div class="half-width">
         <nav>
@@ -48,17 +51,18 @@
 
   <main>
     <section id="work">
-        <div class="content-wrapper">
-          <h2>My Portfolio</h2>
-          <div class="project-image">
-            <a href="rogue/index.html" target="_blank"><img src="img/rogue-pickings-thumbnail.png" alt="Rogue Pickings"/></a>
+      <div class="content-wrapper">
+        <h2>My Portfolio</h2>
+          <div class="project-wrapper">
+            <div class="project-image">
+              <a href="rogue/index.html" target="_blank"><img src="img/rogue-pickings-thumbnail.png" alt="Rogue Pickings"/></a>
+            </div>
+            <div class="project-description">
+              <a href="rogue/index.html" target="_blank"><h3 id="rogue">Rogue Pickings</h3></a>
+              <p>Rogue Pickings was hand coded from a Photoshop design comp provided by Skillcrush. This project truly helped to develop my skills for turning concept into reality!</p>
+            </div>
           </div>
-          <div class="project-description">
-            <a href="rogue/index.html" target="_blank"><h3 id="rogue">Rogue Pickings</h3></a>
-            <p>Rogue Pickings was hand coded from a Photoshop design comp provided by Skillcrush. This project truly helped to develop my skills for turning concept into reality!</p>
-          </div>
-        </div>
-        <div class="content-wrapper">
+          <div class="project-wrapper">
             <div class="project-image">
               <a href="jubilee/index.html" target ="_blank"><img src="img/jubilee-thumbnail.png" alt="Jubilee Austen"/></a>
             </div>
@@ -67,7 +71,7 @@
               <p>This was the first website I coded - EVER! This was a project facilitated by Skillcrush and was coded by hand using my newly acquired knowledge of HTML & CSS.</p>
             </div>
           </div>
-            <div class="content-wrapper">
+          <div class="project-wrapper">
             <div class="project-image">
               <a href="unplugged/index.html" target="_blank"><img src="img/unplugged.jpg" alt="Unplugged"/></a>
             </div>
@@ -75,11 +79,13 @@
               <a href="unplugged/index.html" target="_blank"><h3 id="unplugged">Unplugged</h3></a>
               <p>The Unplugged project was the first fully responsive multi page website I coded. This project was so much fun (and a bit frustrating at times) and it helped me to truly work on my responsive coding skills.  </p>
             </div>
-        </div>
+          </div>
+        </div> <!--- project/work content ends here-->
     </section>
+</main>
 
     <section id="about">
-      <div class=".content-wrapper">
+      <div class="content-wrapper">
         <h2>A bit about me</h2>
         <div class="half-width">
         <p>COVID-19. Oh yes, my story starts there! Like many others, the coronavirus made life a bit topsy-turvy. When I was furloughed from my position as a recruiter, I knew that I needed to make a change but wasn't sure where to even begin! I stumbled across Skillcrush and I knew it was going to be for me! I love technology and I knew that I wanted to make an impact in the tech world. </p>
@@ -91,25 +97,28 @@
     </section>
 
     <footer id="contact">
-          <div class=".content-wrapper">
-            <h2>Let's connect!</h2>
-            <div class="third-width">
-              <a href="mailto:emilynmartinez615@gmail.com"><img src="img/mail.png" alt="mail icon" class="center"/></a>
-              <h3>Email Me </h3>
-          </div>
-          <div class="third-width">
-              <a href="https://github.com/emily615" target="_blank"><img src="img/github.png" alt="github icon" /></a>
-              <a href="https://www.linkedin.com/in/emilymartinez615/" target="_blank"><img src="img/linkedin.png" alt="linkedin icon" /></a>
-              <h3>Follow Me</h3>
-          </div>
-          <div class ="third-width">
-            <img src="img/place.png" alt="location icon" class="center"/>
-            <h3>Butler, N.J., USA</h3>
-          </div>
-        </div>
-      </footer>
-    </main>
+      <div class="contact">
+        <h2>Let's connect!</h2>
+        <div class="contact-icons">
+          <p>
+            <a href="mailto:emilynmartinez615@gmail.com"><i class="far fa-envelope"></i></a>
+          </p>
+          <p>
+            <a href="https://github.com/emily615" target="_blank"><i class="fab fa-github"></i></a>
+          </p>
+          <p>
+           <a href="https://www.linkedin.com/in/emilymartinez615/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+         </p>
+         <p>
+          <a href="https://goo.gl/maps/eGgcGLTtxkeyEwc76" target="blank"><i class="fas fa-map-marker-alt"></i></a>
+        </p>
+      </div>
+    </div>
 
+  <div class="copyright">
+    <p>Copyright 2020 | Emily Nichole</p>
+  </div>
+</footer>
 
 
 

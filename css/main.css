@@ -93,9 +93,11 @@ html {
 }
 
 body {
+  background-color: #ecedef;
   font-family: 'Open Sans Condensed',sans-serif;
   font-size: 1.5em;
   font-weight: 600;
+  text-align: center;
   color:#373239;
 }
 
@@ -108,6 +110,7 @@ ul, ol {
 a {
   text-decoration: none;
   color:#658a50;
+  padding: 0px 20px 0px;
 }
 
 a:hover{
@@ -123,23 +126,23 @@ h1 {
 
 h2 {
   font-family: 'Playball', cursive;
-  font-size: 2.5em;
+  font-size: 2.25em;
   color: #102f03;
 }
 
 h3 {
   font-family:'Open Sans', sans-serif;
-  font-size: 1.75em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.15em;
   line-height: 1.5;
 }
 
 span {
-  font-family: 'Playball',cursive;
+  font-family: 'Playball', cursive;
   font-size: 1.5em;
   color:#658a50;
 }
@@ -148,10 +151,14 @@ img {
   width: 100%;
 }
 
+#work img {
+  height: auto;
+  border: 3px #658a50 solid;
+  border-radius: 5px;
+}
+
 .content-wrapper{
-  width: 90%;
-  margin: 0;
-  margin: 5px;
+  margin: 10px;
 }
 
 /*-----------------Base header - footer styles----------------*/
@@ -165,7 +172,7 @@ footer {
 }
 
 header {
-  padding: 5px;
+  padding: 10px;
 }
 
 header .content-wrapper{
@@ -177,10 +184,91 @@ header .content-wrapper{
 
 header nav {
   display:flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: flex-start;
+
+}
+
+header nav ul{
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header nav ul li {
+  font-size: 1.5em;
+}
+
+.contact p {
+    font-size: 2em;
+}
+
+footer {
+  text-align: center;
+  flex-direction: row wrap;
+  padding-bottom: 10px;
+}
+
+footer p {
+  padding-top: 20px;
+  margin:0;
+}
+
+footer h2 {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 50px 0px 0px;
+}
+
+footer .contact-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-flow: row wrap;
 }
 
+footer .contact-icons p {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+footer .social-icons p i {
+  color: #658a50;
+  margin: 0px 0px 25px;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+footer .copyright p {
+  font-size: .875em;
+}
+
+
+/* -----------------Mobile Styles ----------------------------------- */
+
+/* Portfolio Work area */
+
+#work h2 {
+  margin: 45px 0;
+}
+
+#work h3 {
+  margin: 0;
+}
+#work p {
+  margin: 0;
+}
+
+#work .project-image{
+  display:flex;
+  justify-content: center;
+}
 
 
 /* ==========================================================================
@@ -271,7 +359,52 @@ header nav {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 768px) {
+  /*Tablet Styles Here*/
+
+  /*General Styles*/
+
+.content-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+header .content-wrapper{
+  background: url('../img/workspace2.png');
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+header h1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+header p {
+  text-align: left;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+header nav ul li a {
+  background-color:rgba(101, 138, 80, 0.6);
+  border-radius: 10px;
+  color:#102f03;
+  font-weight: bolder;
+  margin: 0px 5px;
+}
+
+
+
+
+
   /* Style adjustments for viewports that meet the condition */
 }
 
